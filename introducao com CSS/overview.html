@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview do HTML 5</title>
+  <link rel="stylesheet" href="overview.css">
+</head>
+<body>
+  <h1 class="titulo espacado pontilhado" id="principal">Overview do HTML 5</h1>
+
+  <h2>Textos</h2>
+  <p class="justificado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Suscipit nisi beatae</b> aliquam aperiam sequi hic, libero maiores repudiandae <i>sapiente</i> voluptatem consequatur quod officiis? Iusto quaerat, praesentium voluptas <del>necessitatibus</del> <ins>recusandae</ins> blanditiis.</p>
+  <p class="justificado"><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Qui ipsum <q>officiis</q> vero sed ex a in fugiat cupiditate <cite>possimus</cite> aliquid reiciendis fugit eos quia, repellat harum amet, corporis, quis dignissimos.</p>
+  <p class="justificado">Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Ipsa quibusdam ut dolorem, esse voluptatem quia? Porro, <mark>perferendis odit molestiae incidunt dolorem impedit</mark> laudantium molestias quisquam repellat eaque consequatur veniam nisi.</p>
+
+  <h2>Listas</h2>
+  <h3>Ordenadas</h3>
+  <p>Estes são os melhores times do Campeonato Paulista 2021</p>
+  <ol>
+    <li>São Paulo</li>
+    <li>Palmeiras</li>
+    <li>Mirassol</li>
+    <li>Corinthians</li>
+  </ol>
+
+  <h3 id="nao-ordenadas">Não Ordenadas</h3>
+  <p>Estas são as empresas que estão com inúmeras oportunidades abertas (vagas) em tecnologia:</p>
+  <ul>
+    <li>Magalu</li>
+    <li>Nubank</li>
+    <li>Mercado Livre</li>
+  </ul>
+
+  <h3>Definição</h3>
+  <dl>
+    <dt>ONU</dt>
+    <dd>Organização das Nações Unidas é uma entidade...</dd>
+
+    <dt>CBF</dt>
+    <dd>Comitê Brasileiro de Futebol é uma instituição....</dd>
+  </dl>
+
+  <h2>Tabelas</h2>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th colspan="2">Classificação</th>
+        <th>V</th>
+        <th>E</th>
+        <th>D</th>
+        <th>P</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Bragantino</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bahia</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Ceará</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="6">Campeonato Brasileiro 2021</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>Imagens</h2>
+
+  <!-- Imagem Local (relativa) -->
+  <img src="cpi.jpeg" alt="" id="foto">
+
+  <!-- Imagem Externa (absoluta) -->
+  <img src="http://www.lorempixel.com.br/284/159" alt="">
+
+  <!-- Imagem em Texto (base64) -->
+  <img src="data:image/png;base64,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" />
+
+  <h2>Hyperlinks</h2>
+
+  <!-- Link Absoluto -->
+  <a href="http://www.uol.com.br" target="_blank">UOL</a>
+
+  <!-- Link Relativo -->
+  <a href="intro.html">Introdução</a>
+
+  <!-- Link Email -->
+  <a href="mailto:sac@caelum.com.br">sac@caelum.com.br</a>
+
+  <!-- Link Cego -->
+  <a href="#">Ir para topo</a>
+
+  <!-- Link Ancora -->
+  <a href="#nao-ordenadas">Ir para Listas Não Ordenadas</a>
+
+  <h2>Iframes</h2>
+  <iframe src="intro.html" frameborder="0" height="290"></iframe>
+
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MbOWFYFSDNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5872631813677!2d-46.667435184542505!3d-23.547342884689805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5825e5ce392b%3A0xa1bf631ab482f725!2sEst%C3%A1dio%20Municipal%20Paulo%20Machado%20de%20Carvalho!5e0!3m2!1spt-BR!2sbr!4v1622917315525!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+
+  <h2>Formulários</h2>
+
+  <form action="pagamento.html">
+    <fieldset>
+      <legend>Suas Informações</legend>
+
+      <label for="nome">Nome Completo</label><br>
+      <input type="text" name="nome" id="nome">
+      <br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" placeholder="email@provedor.com" name="email" id="email">
+      <br><br>
+
+      <label for="cpf">CPF</label><br>
+      <input type="number" placeholder="000000000-00" name="cpf" id="cpf">
+      <br><br>
+      
+      <label for="telefone">Telefone</label><br>
+      <input type="number" placeholder="(00) 9 0000-0000" name="telefone" id="telefone">
+      <br><br>
+
+      <button>Ir para o Pagamento</button>
+    </fieldset>
+  </form>
+  <br><br><br><br>
+</body>
+</html>

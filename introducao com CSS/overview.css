@@ -1,0 +1,108 @@
+/*
+
+Sintaxe CSS
+
+seletor {
+  prop1: valor1;
+  prop2: valor2;
+}
+
+*/
+
+/* Tipos de Seletores */
+/* 
+Seletor de Tag 
+(Genérico / Amplo / Menor Controle) 
+Especificidade: 1
+*/
+
+body {
+  background-color:lemonchiffon;
+}
+
+h1 {
+  color: blue;
+  text-align: right;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 4px solid;
+  border-top: 4px solid;
+  background-color: whitesmoke;
+}
+
+/* 
+Seletor de Classe 
+(Customizado / Maior Controle / Reutilizável / Composição) 
+Especificidade: 10
+*/
+
+.titulo {
+  text-transform: uppercase;
+  color:black;
+  background-color: silver;
+  text-align: center;
+}
+
+.justificado {
+  text-align: justify;
+}
+
+.espacado {
+  letter-spacing: 16px;
+}
+
+.pontilhado {
+  border: 4px dotted red;
+}
+
+/* 
+Seletor de ID
+(Customizado / Exclusivo / Não é Reutilizável / Não tem Composição)
+Especificidade: 100
+*/
+
+#foto {
+  border: 10px solid red;
+  width: 97%;
+}
+
+/*
+Especificidade de Seletores (Combinação)
+*/
+
+/* 1 */
+h1 {
+  background-color: skyblue;
+}
+
+/* 1 + 10 = 11 */
+h1.titulo {
+  background-color: steelblue;
+}
+
+/* 1 + 10 + 10 = 21 */
+h1.titulo.espacado {
+  background-color: violet;
+}
+
+/* 1 + 10 + 10 + 10 = 31 */
+h1.titulo.espacado.pontilhado {
+  background-color: red;
+}
+
+/* 100 */
+#principal {
+  background-color: chartreuse;
+}
+
+/* 1 + 100 = 101 */
+h1#principal {
+  background-color: cyan;
+}
+
+/* 1 + 10 + 100 = 111 */
+h1.titulo#principal {
+  background-color: lightcoral;
+}

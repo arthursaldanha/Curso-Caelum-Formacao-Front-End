@@ -1,0 +1,20 @@
+/* Comentário no CSS */
+/*
+CSS - Cascading Style Sheets ou Folha de Estilos em Cascata
+
+Sintaxe do CSS:
+
+seletor { propriedade: valor; }
+
+*/
+
+h1 {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: center;
+  color:cornflowerblue;
+}
