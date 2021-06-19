@@ -1,0 +1,215 @@
+body {
+  background-color: silver;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%; /* 16px | 100% | 1em */
+  /* font-weight: bold;
+  font-style: italic; */
+  line-height: 1.5;
+}
+
+.site {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+  .site__header {
+    /* height: auto; */
+    background-color:whitesmoke;
+    /* overflow: auto; */
+  }
+
+    .logo {
+      width: 280px;
+      height: 120px;
+      /* background-color: khaki; */
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzUuNiA2MiI+PHBhdGggZD0iTTE0NC4yIDBjLTcgMC0xMy41IDIuMy0xOC44IDYuMi01LjMtMy45LTExLjgtNi4yLTE4LjgtNi4yUzkzLjEgMi4zIDg3LjggNi4yQzgyLjUgMi4zIDc2LjEgMCA2OSAwYy03IDAtMTMuNSAyLjMtMTguOCA2LjJDNDUgMi4zIDM4LjUgMCAzMS40IDAgMTQuMSAwIDAgMTMuOSAwIDMxczE0LjEgMzEgMzEuNCAzMWM3IDAgMTMuNS0yLjMgMTguOC02LjJDNTUuNSA1OS43IDYyIDYyIDY5IDYyczEzLjUtMi4zIDE4LjgtNi4yQzkzIDU5LjcgOTkuNSA2MiAxMDYuNiA2MmM3IDAgMTMuNS0yLjMgMTguOC02LjIgNS4yIDMuOSAxMS43IDYuMiAxOC44IDYuMiAxNy4zIDAgMzEuNC0xMy45IDMxLjQtMzFTMTYxLjUgMCAxNDQuMiAwem0tMTguOCA0N2MtMy44LTQuMy02LjEtOS45LTYuMS0xNnMyLjMtMTEuNyA2LjEtMTZjMy44IDQuMyA2LjEgOS45IDYuMSAxNnMtMi4zIDExLjctNi4xIDE2em0tMzcuNiAwYy0zLjgtNC4zLTYuMS05LjktNi4xLTE2czIuMy0xMS43IDYuMS0xNmMzLjggNC4zIDYuMSA5LjkgNi4xIDE2cy0yLjMgMTEuNy02LjEgMTZ6bS0zNy42IDBjLTMuOC00LjMtNi4xLTkuOS02LjEtMTZzMi4zLTExLjcgNi4xLTE2YzMuOCA0LjMgNi4xIDkuOSA2LjEgMTYgLjEgNi4xLTIuMyAxMS43LTYuMSAxNnpNNi41IDMxYzAtMTMuNSAxMS4yLTI0LjUgMjQuOS0yNC41IDUuMSAwIDkuOSAxLjUgMTMuOSA0LjItNC44IDUuNC03LjcgMTIuNS03LjcgMjAuMyAwIDcuOCAyLjkgMTQuOSA3LjcgMjAuMy00IDIuNi04LjcgNC4yLTEzLjkgNC4yLTEzLjcgMC0yNC45LTExLTI0LjktMjQuNXptNDguNiAyMC4zYzQuOC01LjQgNy43LTEyLjUgNy43LTIwLjMgMC03LjgtMi45LTE0LjktNy43LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMnM5LjkgMS41IDEzLjkgNC4yYy00LjggNS40LTcuOCAxMi41LTcuOCAyMC4zIDAgNy44IDIuOSAxNC45IDcuOCAyMC4zLTQgMi42LTguNyA0LjItMTMuOSA0LjItNS4xIDAtOS45LTEuNi0xMy45LTQuMnptMzcuNiAwYzQuOC01LjQgNy44LTEyLjUgNy44LTIwLjMgMC03LjgtMi45LTE0LjktNy44LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMnM5LjkgMS41IDEzLjkgNC4yYy00LjggNS40LTcuOCAxMi41LTcuOCAyMC4zIDAgNy44IDIuOSAxNC45IDcuOCAyMC4zLTQgMi42LTguNyA0LjItMTMuOSA0LjJzLTkuOS0xLjYtMTMuOS00LjJ6bTUxLjUgNC4yYy01LjEgMC05LjktMS41LTEzLjktNC4yIDQuOC01LjQgNy44LTEyLjUgNy44LTIwLjMgMC03LjgtMi45LTE0LjktNy44LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMiAxMy43IDAgMjQuOSAxMSAyNC45IDI0LjVzLTExLjIgMjQuNS0yNC45IDI0LjV6Ii8+PC9zdmc+");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 80%;
+      text-indent: -9000px;
+      /* font-size: 0; */
+    }
+
+    .logo a {
+      /* background-color: tomato; */
+      display: inherit;
+      height: inherit;
+    }
+
+    .menu {
+      background-color: black;
+    }
+
+      .menu__item {
+        display: block;
+        float: left;
+        width: calc(1200px / 6);
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        line-height: 2.5;
+      }
+
+      .menu__item:hover {
+        background-color: royalblue;
+      }
+
+      .menu__item a {
+        color: inherit;
+        text-decoration: inherit;
+        display: inherit;
+      }
+
+  .site__main {
+    height: auto;
+    background-color: white;
+    /* background-color: navajowhite; */
+  }
+
+    .highlight {
+      position: relative;
+    }
+
+      .highlight__image {
+        display: block;
+      }
+
+      .highlight__title {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        font-size: 3em;
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+    .posts {
+      width: 80%;
+      float: left;
+    }
+
+      .post {
+        /* border: 4px solid red; */
+        margin-bottom: 16px;
+        /* padding: top right bottom left; */
+        padding: 16px 16px 16px 16px;
+      }
+
+        .post__title {
+          font-size: 2em;
+        }
+
+        .post__resume {
+          font-size: 1.1em;
+        }
+
+        .post__read-more {
+          font-size: 1.1em;
+          color:royalblue;
+          text-decoration: none;
+          background-color: white;
+          display: inline-block;
+          padding: 0px 8px 0px 16px;
+          margin-top: 16px;
+          position: relative;
+        }
+
+        .post__read-more::before {
+          content: "";
+          background-color: midnightblue;
+          width: 8px;
+          height: 25.5px;
+          display: block;
+          position: absolute;
+          left: 0;
+        }
+
+        .post__read-more a {
+          color: inherit;
+          text-decoration: inherit;
+        }
+
+        .post__read-more:hover {
+          background-color: black;
+          color: white;
+        }
+
+        .post__read-more:hover::before {
+          background-color: dodgerblue;
+        }
+
+    .sidebar {
+      background-color: #dadada;
+      width: 20%;
+      float: right;
+      min-height: 600px;
+    }
+
+      .sidebar__title {
+        padding: 8px 16px;
+        font-size: 1.3em;
+      }
+
+      .sidebar__nav {
+        padding: 0px 16px;
+        /* border: 1px solid ; */
+      }
+
+      .sidebar__nav a {
+        color: royalblue;
+        /* border: 1px solid; */
+        display: block;
+        line-height: 2;
+        text-decoration: none;
+      }
+
+      .sidebar__nav a:hover {
+        text-decoration: underline;
+      }
+
+  .site__footer {
+    height: auto;
+    background-color: black;
+    padding: 32px;
+  }
+
+    .copyright {
+      float: left;
+      line-height: 35px;
+      color: white;
+    }
+
+    .social {
+      float: right;
+    }
+
+      .social a {
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        background-image: url(../images/social-icons.png);
+        text-indent: -9000px;
+        background-position-y: -130px;
+        margin-left: 8px; 
+      }
+
+      .social a:hover {
+        background-position-y: 0px;
+      }
+      
+      .social__fb {
+        background-position-x: -156px;
+      }
+
+      .social__tw {
+        background-position-x: -117px;
+      }
+
+      .social__yt {
+        background-position-x: -547px;
+      }
+
+

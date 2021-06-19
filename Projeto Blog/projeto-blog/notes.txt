@@ -1,0 +1,20 @@
+==================
+FATOR DE RESOLUÇÃO
+==================
+
+LxA
+(TELA)        (RECOMENDAÇÃO - LARG MAX)
+800x600   =>  768px
+1024x768  =>  960px
+1280x1024 =>  1200px
+
+
+===================
+METODOLOGIA CSS BEM
+===================
+
+Block Element Modifier
+
+.block { ... }
+.block__element { ... }
+.block__element--modifier { ... }
