@@ -1,0 +1,50 @@
+body {
+  font: 100%/1.5 arial, tahoma, helvetica;
+}
+
+.container > * {
+  background-color:skyblue;
+  padding: 1em;
+}
+
+.container > *:nth-child(odd) {
+  background-color: royalblue;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 500px;
+  grid-gap: 16px;
+}
+
+header {
+  grid-column: 1 / -1;
+}
+
+main {
+  grid-column: 1 / -1;
+}
+
+aside {
+  grid-column: 1 / -1;
+}
+
+footer {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-column: 1 / 4;
+  }
+
+  aside {
+    grid-column: 4 / -1;
+  }
+}
